@@ -30,22 +30,16 @@ class Solution {
     public int romanToInt(String s) {
         int n = s.length();
         int ans = 0;
-
         for (int i = 0; i < n; i++) {
             int curr = value(s.charAt(i));
-
-            // agar next character bada hai, to subtract karo
             if (i + 1 < n && curr < value(s.charAt(i + 1))) {
                 ans -= curr;
             } else {
                 ans += curr;
             }
         }
-
         return ans;
     }
-
-    // helper function to map roman to integer
     private int value(char ch) {
         switch (ch) {
             case 'I': return 1;
