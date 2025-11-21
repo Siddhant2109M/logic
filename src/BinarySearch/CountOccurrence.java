@@ -1,6 +1,6 @@
 package BinarySearch;
 
-public class SearchRange {
+public class CountOccurrence {
     public static int firstOccurrence(int[] nums,int target){
         int st=0,end=nums.length-1;
         int ans=-1;
@@ -39,12 +39,7 @@ public class SearchRange {
     }
     public static void main(String[] args) {
         int[] nums={2, 2 , 3 , 3 , 3 , 3 , 4};
-        int target =3;
-        int[] res=new int[2];
-        res[0]=firstOccurrence(nums,target);
-        res[1]=lastOccurrence(nums,target);
-        for (int i : res) {
-            System.out.println(i);
-        }
+        int target =2;
+        System.out.println(lastOccurrence(nums, target)-firstOccurrence(nums, target)+1);
     }
 }
