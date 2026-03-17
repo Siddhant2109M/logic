@@ -11,9 +11,9 @@ public class ArraySpiral {
         int m=arr.length;
         int n=arr[0].length;
         int fRow=0;
-        int lCol=n-1;
         int lRow=m-1;
         int fCol=0;
+        int lCol=n-1;
         List<Integer> res = new ArrayList<>();
         int count = m*n;
         while(count>0){
