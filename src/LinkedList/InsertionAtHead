@@ -1,0 +1,7 @@
+public static Node insertionAtHead(Node head, int data){
+     Node new = new Node(data);
+     if(head==null) return new;
+     new.next=head;
+     head=new;
+     return head;
+}

@@ -1,0 +1,16 @@
+public static Node insertionAtHead(Node head, int data,int k){
+      Node newNode = new Node(data);
+      Node temp=head;
+      if(k==1){
+          if(head==null) return newNode;
+               newNode.next=head;
+               head=newNode;
+               return head;
+      }
+      for(int i=0;i<k-1;i++){
+          temp=temp.next;
+      }
+      newNode.next=temp.next;
+      temp.next=newNode;
+      return head;
+}
