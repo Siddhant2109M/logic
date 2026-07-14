@@ -4,7 +4,7 @@ package sorting;
 //and insert the current element in the correct position in the sorted part
 //Time Complexity: O(n^2) in the worst case, O(n) in the best case (when the array is already sorted)
 public class InsertionSort {
-    public static void insertionSort(int[] nums){;
+    public static void insertionSort(int[] nums){
         for(int i=1;i<nums.length;i++){
             int currElement=nums[i];
             int j=i-1; // we want to go on the left side of i,and insert the current element in the correct position 
